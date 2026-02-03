@@ -1,0 +1,13 @@
+{
+  "name": "angelsaddons-space-age",
+  "version": "0.0.1",
+  "title": "Angel's Space Age Compatibility",
+  "author": "joihoin",
+  "factorio_version": "2.0",
+  "dependencies": [
+    "base >= 2.0",
+    "space-age >= 2.0.73",
+    "angelspetrochem >= 2.0.1"
+  ],
+  "description": "Compatibility patches for Angel's mods with Space Age."
+}
