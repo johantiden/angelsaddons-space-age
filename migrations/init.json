@@ -1,0 +1,11 @@
+{
+  "entity": [
+    ["heavy-oil", "crude-oil"],
+    ["carbon", "angels-solid-carbon"]
+  ],
+  "item": [
+    ["heavy-oil", "crude-oil"],
+    ["carbon", "angels-solid-carbon"]
+  ],
+  "fluid": [["heavy-oil", "crude-oil"]]
+}

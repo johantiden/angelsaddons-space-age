@@ -1,8 +1,8 @@
+--INITIALIZE
+angelsmods = angelsmods or {}
 
-local shallow = table.deepcopy(data.raw["tile"]["oil-ocean-shallow"]) 
-shallow.fluid = "crude-oil"
 
-local deep = table.deepcopy(data.raw["tile"]["oil-ocean-deep"]) 
-deep.fluid = "crude-oil"
+-- Change oil ocean tiles to crude-oil - Offshore pumps will use the "fluid" field.
+data.raw["tile"]["oil-ocean-shallow"].fluid = "crude-oil"
+data.raw["tile"]["oil-ocean-deep"].fluid = "crude-oil"
 
-data:extend{shallow, deep}
