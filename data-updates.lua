@@ -1,4 +1,33 @@
 
+
+if mods["loader_mini_1x1"] then
+    -- use teir 5 belt as input
+    bobmods.lib.recipe.replace_ingredient("loader-mini5", "bob-turbo-transport-belt", "bob-ultimate-transport-belt")
+
+    -- loader_mini_1x1 MK4 and MK5 have their colors swapped when comparing with bobslogistics. Swap them!
+    local tech_icon4 = data.raw.technology["loader-mini4"].icon
+    data.raw.technology["loader-mini4"].icon = data.raw.technology["loader-mini5"].icon
+    data.raw.technology["loader-mini5"].icon = tech_icon4
+
+    local animation4 =data.raw["loader-1x1"]["loader-mini4"].belt_animation_set
+    data.raw["loader-1x1"]["loader-mini4"].belt_animation_set = data.raw["loader-1x1"]["loader-mini5"].belt_animation_set
+    data.raw["loader-1x1"]["loader-mini5"].belt_animation_set = animation4
+
+    local recipe_icon4 = data.raw.recipe["loader-mini4"].icon
+    data.raw.recipe["loader-mini4"].icon = data.raw.recipe["loader-mini5"].icon
+    data.raw.recipe["loader-mini5"].icon = recipe_icon4
+
+    local item_icon4 = data.raw.item["loader-mini4"].icon
+    data.raw.item["loader-mini4"].icon = data.raw.item["loader-mini5"].icon
+    data.raw.item["loader-mini5"].icon = item_icon4
+
+    local item_structure4 = data.raw["loader-1x1"]["loader-mini4"].structure
+    data.raw["loader-1x1"]["loader-mini4"].structure = data.raw["loader-1x1"]["loader-mini5"].structure
+    data.raw["loader-1x1"]["loader-mini5"].structure = item_structure4
+end
+
+
+
 -- BALANCING
 -- Space age makes rocket-part(s) are way cheaper than vanilla rockets. The goal of the game is no longer to launch a single rocket, but very very many.
 -- In the same vein, adding space age to Bob/Angels should make rockets cheaper again, even if bobrevamp and angelspetrochem makes them more expensive.
