@@ -1,16 +1,18 @@
 {
   "name": "angelsaddons-space-age",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "title": "Angel's Space Age Compatibility",
   "author": "joihoin",
   "factorio_version": "2.0",
   "dependencies": [
     "base >= 2.0",
     "space-age >= 2.0.73",
+    "boblibrary >= 2.0.3",
     "angelspetrochem >= 2.0.1",
     "? bobelectronics >= 2.0.5",
     "? boblogistics >= 2.0.6",
-    "? loader_mini_1x1 >= 0.2.1"
+    "? loader_mini_1x1 >= 0.2.1",
+    "? bobrevamp >= 2.0.5"
   ],
   "description": "Compatibility patches for Angel's mods with Space Age."
 }

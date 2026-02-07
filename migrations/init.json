@@ -1,11 +1,13 @@
 {
   "entity": [
     ["heavy-oil", "crude-oil"],
-    ["carbon", "angels-solid-carbon"]
+    ["carbon", "angels-solid-carbon"],
+    ["turbo-transport-belt", "bob-turbo-transport-belt"]
   ],
   "item": [
     ["heavy-oil", "crude-oil"],
-    ["carbon", "angels-solid-carbon"]
+    ["carbon", "angels-solid-carbon"],
+    ["turbo-transport-belt", "bob-turbo-transport-belt"]
   ],
   "fluid": [["heavy-oil", "crude-oil"]]
 }
