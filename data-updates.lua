@@ -26,17 +26,19 @@ if mods["loader_mini_1x1"] then
     data.raw["loader-1x1"]["loader-mini5"].structure = item_structure4
 end
 
-
-
 -- BALANCING
 -- Space age makes rocket-part(s) are way cheaper than vanilla rockets. The goal of the game is no longer to launch a single rocket, but very very many.
 -- In the same vein, adding space age to Bob/Angels should make rockets cheaper again, even if bobrevamp and angelspetrochem makes them more expensive.
--- We halve the ingredients needed for rocket parts. low-density-structure and rocket-fuel are already at 1, so we just halve the ingredients of them in turn.
+-- We recuce the ingredients needed for rocket parts. low-density-structure and rocket-fuel are already at 1, so we just halve the ingredients of them in turn.
 if mods["bobrevamp"] then
     if data.raw.item["bob-tungsten-pipe"] then
         bobmods.lib.recipe.set_ingredient("rocket-part", { type = "item", name = "bob-tungsten-pipe", amount = 15 })
     end
+    
     bobmods.lib.recipe.set_ingredient("rocket-part", { type = "item", name = "bob-heat-shield-tile", amount = 5 })
+    bobmods.lib.recipe.set_ingredient("bob-heat-shield-tile", { type = "item", name = "bob-silicon-nitride", amount = 7 })
+    bobmods.lib.recipe.set_ingredient("bob-heat-shield-tile", { type = "item", name = "bob-tungsten-carbide", amount = 3 })
+    bobmods.lib.recipe.set_energy_required("bob-heat-shield-tile", 15)
 
     if data.raw.item["bob-titanium-plate"] then
         bobmods.lib.recipe.set_ingredient("low-density-structure", { type = "item", name = "bob-titanium-plate", amount = 10 })

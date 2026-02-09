@@ -9,5 +9,8 @@
     ["carbon", "angels-solid-carbon"],
     ["turbo-transport-belt", "bob-turbo-transport-belt"]
   ],
-  "fluid": [["heavy-oil", "crude-oil"]]
+  "fluid": [
+    ["heavy-oil", "crude-oil"],
+    ["sulfuric-acid", "angels-liquid-sulfuric-acid"]
+  ]
 }
