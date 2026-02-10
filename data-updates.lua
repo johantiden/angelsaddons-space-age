@@ -1,5 +1,15 @@
 
 
+
+
+if mods["angelspetrochem"] then
+    -- Angelspetrochem wrongly replaces heavy oil with naphtha in simple-coal-liquefaction,
+    -- which cant' easily be turned into lubricant. Replace it with base mineral oil
+    data.raw.recipe["simple-coal-liquefaction"].results = {
+        { type = "fluid", name = "angels-liquid-mineral-oil", amount = 50 }
+    }
+end
+
 if mods["loader_mini_1x1"] then
     -- use teir 5 belt as input
     bobmods.lib.recipe.replace_ingredient("loader-mini5", "bob-turbo-transport-belt", "bob-ultimate-transport-belt")
