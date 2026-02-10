@@ -21,7 +21,10 @@ if mods["bobelectronics"] then
 end
 
 -- merge carbon from space age into angels carbon, see also migrations
-OV.global_replace_item("carbon", "angels-solid-carbon")
+if mods["angelspetrochem"] then
+  OV.global_replace_item("carbon", "angels-solid-carbon")
+  data.raw.recipe["carbon"].icon = data.raw.recipe["angels-solid-carbon"].icon
+end
 
 -- space-age adds turbo-transport-belt, merge it with bob's version for interoperability, see also migrations
 if mods["boblogistics"] then
