@@ -35,4 +35,20 @@ if mods["angelspetrochem"] then
   OV.global_replace_item("sulfuric-acid", "angels-liquid-sulfuric-acid")
 end
 
+-- bobswarfare adds coal to the firearm-magazine recipe, but coal is not readily available in space. This adds another recipe for firearm-magazine that uses carbon instead of coal.
+if mods["bobwarfare"] then
+  local copy = table.deepcopy(data.raw["recipe"]["firearm-magazine"])
+  copy.name = "firearm-magazine-carbon"
+  copy.surface_conditions = {{
+    property = "gravity",
+    max = 0.1
+  }}
+  copy.ingredients = {
+    {type = "item", name = "iron-plate", amount = 2},
+    {type = "item", name = "carbon", amount = 1}
+  }
+
+  data:extend{copy}
+end
+
 OV.execute()

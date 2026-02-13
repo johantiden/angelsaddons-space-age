@@ -1,45 +1,51 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.0.9
+Date: 2026-02-13
+  Compatibility:
+      - Add a separate recipe for Firearm Magazine, which takes iron plates and carbon.
+        This can only be used on space platforms and is meant as a sort of revert to the vanilla space age experience where magazines can be automated even on early space platforms.
+---------------------------------------------------------------------------------------------------
 Version: 0.0.8
-Date: 2026-02-09 23:43:46 +0100
+Date: 2026-02-09
   Compatibility:
       - WARNING! Make Simple Coal Liquefaction output Base Mineral Oil instead of Naphtha.
         WARNING! This will break existing Vulcanus setups as I cannot safely migrate Naphtha into Base Mineral Oil
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.7
-Date: 2026-02-09 23:43:46 +0100
+Date: 2026-02-09
   Compatibility:
       - Change Vulcanis sulfuric acid geyser output angels-liquid-sulfuric-acid for compatibility
   Balancing: 
       - Make heat shields a little cheaper and faster.
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.6
-Date: 2026-02-07 02:06:01 +0100
+Date: 2026-02-07
   Compatibility:
       - (loader_mini_1x1) Make MK5 loaders use MK5 belts.
       - (loader_mini_1x1) Flip graphics of loaders MK4 and MK5 to match the overall tiered color scheme.
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.5
-Date: 2026-02-07 01:26:07 +0100
+Date: 2026-02-07
   Balancing:
       - Make rocket parts cheaper (by half-ish). In space age, the goal is no longer to create a single rocket, but make many many rockets.
         It's not feasible to have such high cost.
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.4
-Date: 2026-02-06 09:56:35 +0100
+Date: 2026-02-06
   Balancing:
       - Add green circuits to scrap recycling output - Most Fulgoran recipes require green circuits, which was meant to be gotten from scrap.
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.3
-Date: 2026-02-05 10:03:51 +0100
+Date: 2026-02-05
   Compatibility:
       - (loader_mini_1x1) Use migrated bob-turbo-transport-belt instead of turbo-transport-belt, which is visible but way late game.
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.2
-Date: 2026-02-04 13:47:32 +0100
+Date: 2026-02-04
   Compatibility:
     - Replace space age carbon with angels-solid-carbon, this allows mixing of Angel's recipes and the Carbon mined from asteroids.
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.1
-Date: 2026-02-03 21:23:00 +0100
+Date: 2026-02-03
   Compatibility:
     - Convert Fulgora oil ocean to crude-oil instead of heavy-oil, this allows ore refineries to work properly on Fulgora.
