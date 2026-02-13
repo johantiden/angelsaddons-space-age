@@ -1,8 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.0.10
+Date: 2026-02-13
+  Info:
+      - (Oops) Add optional dependencies on bobwarfare and angelsrefining to reflect the use in 0.0.9
+---------------------------------------------------------------------------------------------------
 Version: 0.0.9
 Date: 2026-02-13
   Info:
-      - (Oops) Add optional dependencies on bobwarfare and angelsrefining to reflect the use in 0.0.8
+      - Add a separate recipe for Firearm Magazine, which takes iron plates and carbon.
+        This can only be used on space platforms and is meant as a sort of revert to the vanilla space age experience where magazines can be automated even on early space platforms.
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.8
 Date: 2026-02-09
