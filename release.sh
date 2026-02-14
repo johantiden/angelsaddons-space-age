@@ -11,7 +11,7 @@ echo "Releasing  ${modname} ${version}..."
 git mv migrations/*.json migrations/${modname}_${version}.json
 git add migrations/${modname}_${version}.json
 
-if ! grep -q "^${version}" changelog.txt; then
+if ! grep "${version}" changelog.txt; then
     echo "Version ${version} not found in changelog.txt"
     exit 1
 fi
