@@ -75,3 +75,15 @@ if mods["angelspetrochem"] then
 else
     -- TODO: We currently depend on angelspetrochem so this shouldn't occur, but if we ever make angelspetrochem optional, we should halve the ingredients of rocket-fuel here as well.
 end
+
+
+-- Make biolab a mix of lab 2 and alien lab, requiring both labs as ingredients.
+local lab2 = data.raw["lab"]["bob-lab-2"]
+local alienlab = data.raw["lab"]["bob-lab-alien"]
+if alienlab then
+    bobmods.lib.recipe.add_ingredient("biolab", { type = "item", name = "bob-lab-alien", amount = 1 })
+end
+
+if lab2 then
+    bobmods.lib.recipe.replace_ingredient("biolab", "lab", "bob-lab-2")
+end

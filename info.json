@@ -15,7 +15,8 @@
     "? loader_mini_1x1 >= 0.2.1",
     "? bobrevamp >= 2.0.5",
     "? bobwarfare >= 2.0.5",
-    "? angelsrefining >= 2.0.2"
+    "? angelsrefining >= 2.0.2",
+    "? bobtech 2.0.5"
   ],
   "description": "Compatibility patches for Angel's mods with Space Age."
 }
