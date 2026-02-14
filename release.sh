@@ -21,7 +21,7 @@ git tag -a "v${version}" -m "Release ${version}"
 git push origin main --follow-tags
 
 cd ..
-zip -r "${modname}_${version}.zip" "${modname}"
+zip -r "${modname}_${version}.zip" "${modname}" > /dev/null
 echo "Released ${modname} ${version}!"
 echo "Don't forget to upload the zip file to the mod portal!"
 echo "The zip file is located at: `realpath ${modname}_${version}.zip`"
